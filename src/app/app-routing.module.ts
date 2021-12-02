@@ -8,6 +8,7 @@ import { TestComponentComponent } from './test-component/test-component.componen
 import { LocationsComponent } from './locations/locations.component';
 import { RegistersComponent } from './registers/registers.component';
 import { LoginComponent } from './login/login.component';
+import { ApplicationComponent } from './application/application.component';
 
 const routes:Routes=[
   {path:'',component:HomePageComponent},
@@ -15,9 +16,10 @@ const routes:Routes=[
   {path:'recorder-article',component:RecorderComponent},
   {path:'donating-facts',component:DonatingFactsComponent},
   {path:'contact-us',component:ContactUsComponent},
-  {path:'locations',component:LocationsComponent}, 
+  {path:'locations',component:LocationsComponent},
   { path:'register', component: RegistersComponent},
   { path: 'login', component:LoginComponent},
+  { path: 'application',component:ApplicationComponent}
 
   ]
 

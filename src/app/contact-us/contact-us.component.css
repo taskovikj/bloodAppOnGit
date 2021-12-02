@@ -1,6 +1,10 @@
 .contact-us {
   padding: 70px 0px;
-  background: #1b83a3;
+  background-image: url("/assets/images/pozadinaKontakt.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .section-title h2 {
   color: #ffffff;

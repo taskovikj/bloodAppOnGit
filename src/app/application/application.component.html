@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+
+      <form action="index.html" method="post">
+
+        <h1>Аплицирај за викенд одмор</h1>
+
+        <fieldset>
+
+          <legend><span class="number">1</span>Внесете ги вашите информации</legend>
+
+          <label for="name">Име:</label>
+          <input type="text" id="name" name="user_name">
+
+          <label for="mail">Презиме:</label>
+          <input type="email" id="mail" name="user_email">
+
+          <label for="password">Е-маил:</label>
+          <input type="password" id="password" name="user_password">
+
+          <label>Ве молиме селектирајте, доколку го имате исполнето условот:</label><br>
+          <input type="radio" id="under_13" value="under_13" name="user_age"><label for="under_13" class="light">Имам давано крв минимум 5 пати</label><br>
+
+        </fieldset>
+
+        <fieldset>
+          <label>На кое место би го искористиле викенд одморот:</label>
+          <input type="checkbox" id="development" value="interest_development" name="user_interest"><label class="light" for="development">Дојран</label><br>
+          <input type="checkbox" id="design" value="interest_design" name="user_interest"><label class="light" for="design">Охрид</label><br>
+          <input type="checkbox" id="business" value="interest_business" name="user_interest"><label class="light" for="business">Преспа</label>
+
+        </fieldset>
+
+        <button type="submit">Аплицирај</button>
+
+      </form>
+
+    </body>
+</html>
