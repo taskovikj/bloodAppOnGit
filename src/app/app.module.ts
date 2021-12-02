@@ -12,6 +12,10 @@ import { FooterComponent } from './footer/footer.component';
 import { TestComponentComponent } from './test-component/test-component.component';
 import { RecorderComponent } from './recorder/recorder.component';
 import { DonatingFactsComponent } from './donating-facts/donating-facts.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
+import { MatCarouselModule } from '@ngmodule/material-carousel'; // ---------- Important
+import { CarouselModule, WavesModule } from 'angular-bootstrap-md';
+import { LocationsComponent } from './locations/locations.component'
 
 @NgModule({
   declarations: [
@@ -23,12 +27,18 @@ import { DonatingFactsComponent } from './donating-facts/donating-facts.componen
     FooterComponent,
     TestComponentComponent,
     RecorderComponent,
-    DonatingFactsComponent
+    DonatingFactsComponent,
+    ContactUsComponent,
+    LocationsComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatCarouselModule,
+    CarouselModule,
+    WavesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
