@@ -1,107 +1,110 @@
 <form [formGroup]="starShipForm">
-    <section id="section" class="h-100">
-      <div class="container py-5 h-100 ">
-        <div class="row d-flex justify-content-center align-items-center h-100 bg-red">
-          <div class="col">
-            <div class="card card-registration my-4">
-              <div id="bg1" class="row g-0 ">
-                <div class="col-xl-6 d-none d-xl-block">
-                  <img
-                    src="https://images.unsplash.com/photo-1631815583088-7d4b3e8e6ae2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1909&q=80"
-                    alt="Sample photo"
-                    class="img-fluid"
-                    style="border-top-left-radius: .25rem; border-bottom-left-radius:.25rem;"
-                  />
+<section id="section" class="h-100">
+  <div class="container py-5 h-100 ">
+    <div class="row d-flex justify-content-center align-items-center h-100 bg-red">
+      <div class="col">
+        <div class="card card-registration my-4">
+          <div id="bg1" class="row g-0 ">
+            <div class="col-xl-6 d-none d-xl-block">
+              <img
+                src="https://images.unsplash.com/photo-1631815583088-7d4b3e8e6ae2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1909&q=80"
+                alt="Sample photo"
+                class="img-fluid"
+                style="border-top-left-radius: .25rem; border-bottom-left-radius:.25rem;"
+              />
+            </div>
+            <div class="col-xl-6">
+              <div class="card-body p-md-5 text-black">
+                <h3 class="mb-5 text-uppercase">Student registration form</h3>
+
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+                    <mat-form-field appearance="fill" class="width-100">
+                      <mat-label>Name</mat-label>
+                      <input matInput placeholder="Enter Name" formControlName="name" />
+                    </mat-form-field>
+                  </div>
+                  <div class="col-md-6 mb-4">
+                    <mat-form-field appearance="fill" class="width-100">
+                      <mat-label>Last name</mat-label>
+                      <input matInput placeholder="Enter Last name" formControlName="lastName" />
+                    </mat-form-field>
+                                  </div>
                 </div>
-                <div class="col-xl-6">
-                  <div class="card-body p-md-5 text-black">
-                    <h3 class="mb-5 text-uppercase">Student registration form</h3>
-    
-                    <div class="row">
-                      <div class="col-md-6 mb-4">
-                        <mat-form-field appearance="fill" class="width-100">
-                          <mat-label>Name</mat-label>
-                          <input matInput placeholder="Enter Name" formControlName="name" />
-                        </mat-form-field>
-                      </div>
-                      <div class="col-md-6 mb-4">
-                        <mat-form-field appearance="fill" class="width-100">
-                          <mat-label>Last name</mat-label>
-                          <input matInput placeholder="Enter Last name" formControlName="lastName" />
-                        </mat-form-field>
-                                      </div>
-                    </div>
-    
-                    <div class="row">
-                      <div class="col-md-6 mb-4">
-                        <mat-form-field appearance="fill" class="width-100">
-                          <mat-label>Mother's name</mat-label>
-                          <input matInput placeholder="Enter Mother's name" formControlName="motherName" />
-                        </mat-form-field>
+
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+                    <mat-form-field appearance="fill" class="width-100">
+                      <mat-label>Mother's name</mat-label>
+                      <input matInput placeholder="Enter Mother's name" formControlName="motherName" />
+                    </mat-form-field>
+          
+                  </div>
+                  <div class="col-md-6 mb-4">
+                    <mat-form-field appearance="fill" class="width-100">
+                      <mat-label>Father's name</mat-label>
+                      <input  matInput placeholder="Enter Father's name" formControlName="fatherName" />
+                    </mat-form-field>
+                   
+                  </div>
+                </div>
+                <div class="row">
+                <mat-form-field appearance="fill" class="width-100">
+                  <mat-label>Address</mat-label>
+                  <input matInput placeholder="Enter Address" formControlName="address" />
+                </mat-form-field>
+              </div>
+              <div class="row">
+                <mat-form-field appearance="fill" class="width-100">
+                  <mat-label>Email address</mat-label>
+                  <input matInput placeholder="Ex. pat@example.com" formControlName="email">
+                </mat-form-field>
+              </div>
+              <div class="d-md-flex justify-content-start align-items-center mb-4 py-2">
+              <mat-radio-group formcontrolname="gender">
+                <mat-label style="margin-right: 7px;">Gander:</mat-label>
+                <mat-radio-button value="1">Male</mat-radio-button>
+                <mat-radio-button class="example-radio-button" value="2">Female</mat-radio-button>
+                <mat-radio-button class="example-radio-button" value="3">Custom</mat-radio-button>
+              </mat-radio-group>
+              </div>
               
-                      </div>
-                      <div class="col-md-6 mb-4">
-                        <mat-form-field appearance="fill" class="width-100">
-                          <mat-label>Father's name</mat-label>
-                          <input matInput placeholder="Enter Father's name" formControlName="fatherName" />
-                        </mat-form-field>
-                       
-                      </div>
-                    </div>
-                    <div class="row">
-                    <mat-form-field appearance="fill" class="width-100">
-                      <mat-label>Address</mat-label>
-                      <input matInput placeholder="Enter Address" formControlName="address" />
-                    </mat-form-field>
-                  </div>
-                  <div class="row">
-                    <mat-form-field appearance="fill" class="width-100">
-                      <mat-label>Email address</mat-label>
-                      <input matInput placeholder="Ex. pat@example.com" formControlName="email">
-                    </mat-form-field>
-                  </div>
-                  <div class="d-md-flex justify-content-start align-items-center mb-4 py-2">
-                  <mat-radio-group formcontrolname="gender">
-                    <mat-label style="margin-right: 7px;">Gander:</mat-label>
-                    <mat-radio-button value="1">Male</mat-radio-button>
-                    <mat-radio-button class="example-radio-button" value="2">Female</mat-radio-button>
-                    <mat-radio-button class="example-radio-button" value="3">Custom</mat-radio-button>
-                  </mat-radio-group>
-                  </div>
-                  
-    
-                    <div class="row">
-                  
-                      <div class="col-md-6 mb-4">
-    
-                        <select class="form-select">
-                          <option value="1">City</option>
-                          <option value="2">Option 1</option>
-                          <option value="3">Option 2</option>
-                          <option value="4">Option 3</option>
-                        </select>
-    
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <label for="password">Password</label>
-                      <input type="password" formControlName="password" class="form-control" />
-                      
-                  </div>
-                    <div class="form-outline mb-4">
-                     
-                    </div>
-                    <div class="d-flex justify-content-end pt-3">
-                     
-                      <button mat-raised-button color="primary"  (click)="register()" >Register</button>
-                    </div>
-    
+
+                <div class="row">
+              
+                  <div class="col-md-6 mb-4">
+
+                    <select class="form-select">
+                      <option value="1">City</option>
+                      <option value="2">Option 1</option>
+                      <option value="3">Option 2</option>
+                      <option value="4">Option 3</option>
+                    </select>
+
                   </div>
                 </div>
+                <div class="form-group">
+                  
+                    <mat-form-field appearance="fill" class="width-100">
+                        <mat-label>Password</mat-label>
+                        <input matInput placeholder="Enter Password" formControlName="password" type="password"/>
+                      </mat-form-field>
+                  
+              </div>
+                <div class="form-outline mb-4">
+                 
+                </div>
+                <div class="d-flex justify-content-end pt-3">
+                 
+                  <button mat-raised-button color="primary"  (click)="register()" >Register</button>
+                </div>
+
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    </form>
+    </div>
+  </div>
+</section>
+</form>

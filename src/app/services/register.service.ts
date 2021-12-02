@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Guid } from "guid-typescript";
 import { User } from 'src/models/user';
+import { LoginUser } from 'src/models/loginUser';
+import { Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root'
@@ -9,9 +11,12 @@ export class RegisterService {
 
  
   usersInSystem : User[] = [];
-  tmpp = false;
+ 
 
-  constructor() { }
+  constructor(private router: Router) {
+    
+    
+   }
 
   registerUser(user: User) {
     let singleUser: User = user;
@@ -22,13 +27,24 @@ export class RegisterService {
     localStorage.setItem(singleUser.name,JSON.stringify(singleUser));
 
   }
-  login(user: string, _pass: any){
-    let userr = JSON.parse(localStorage.getItem(user) || '{}');
-   
-    if(userr['password']==_pass){
-       this.tmpp=true;
+  login(user : LoginUser){
+    let userrr : LoginUser = user;
+    let name=userrr['userName'];
+    let pass=userrr['password'];
+    let userr = JSON.parse(localStorage.getItem(name) || '{}');
+    let nameFromLocal=userr['name'];
+    let passFromLocal=userr['password'];
+    console.log(userr);
+    if(name==nameFromLocal && pass==passFromLocal){
+      
+      this.router.navigate(['']);
+    }else{
+      
+      this.router.navigate(['/login']);
     }
 
 
+    }
   }
-}
+
+

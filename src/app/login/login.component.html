@@ -1,0 +1,18 @@
+
+<form [formGroup]="loginForm" >
+<div class="wrapper">
+    <div class="logo"> <img src="https://www.freepnglogos.com/uploads/twitter-logo-png/twitter-bird-symbols-png-logo-0.png" alt=""> </div>
+    <div class="text-center mt-4 name"> Twitter </div>
+    <form class="p-3 mt-3">
+        <mat-form-field appearance="fill" class="width-100">
+            <mat-label>Name</mat-label>
+            <input matInput placeholder="Enter Name" formControlName="userName" />
+          </mat-form-field>
+        <mat-form-field appearance="fill" class="width-100">
+            <mat-label>Password</mat-label>
+            <input matInput placeholder="Enter Password" formControlName="password" type="password"/>
+          </mat-form-field> <button mat-raised-button color="primary"  (click)="login()" >Register</button>
+    </form>
+    <div class="text-center fs-6"> <a href="#">Forget password?</a> or <a href="#">Sign up</a> </div>
+</div>
+</form>
