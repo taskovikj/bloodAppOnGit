@@ -1,0 +1,22 @@
+.card-registration .select-input.form-control[readonly]:not([disabled]) {
+    font-size: 1rem;
+    line-height: 2.15;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+  }
+  .card-registration .select-arrow {
+    top: 13px;
+  }
+  #section
+  {
+    background-color: #fc9842;
+    background-image: linear-gradient(315deg, #fc9842 0%, #fe5f75 74%);
+  }
+  #img1{
+    width: 100%;
+    height: 150%;
+  }
+  mat-form-field.mat-form-field {
+    font-size: 16px;
+  }
+  .example-radio-button{margin-left: 7px;}

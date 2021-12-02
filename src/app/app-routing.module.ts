@@ -6,6 +6,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { RecorderComponent } from './recorder/recorder.component';
 import { TestComponentComponent } from './test-component/test-component.component';
 import { LocationsComponent } from './locations/locations.component';
+import { RegistersComponent } from './registers/registers.component';
 
 
 const routes:Routes=[
@@ -14,7 +15,8 @@ const routes:Routes=[
   {path:'recorder-article',component:RecorderComponent},
   {path:'donating-facts',component:DonatingFactsComponent},
   {path:'contact-us',component:ContactUsComponent},
-  {path:'locations',component:LocationsComponent},
+  {path:'locations',component:LocationsComponent}, 
+  { path:'register', component: RegistersComponent},
 
   ]
 
