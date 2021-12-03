@@ -13,7 +13,7 @@
                           <h6 class="mb-0">Крвна група</h6> <span>1 days ago</span>
                       </div>
                   </div>
-                  <div class="badge"><button routerLink="/reserve" mat-raised-button color="warn" routerLink="/reserve">Донирај</button></div>
+                  <div *ngIf="isLogged" class="badge"><button routerLink="/reserve" mat-raised-button color="warn" routerLink="/reserve">Донирај</button></div>
               </div>
               <div class="mt-5">
                   <h2 class="heading">Достапни крвни единици. од<b> O- </b>крвна група</h2>
@@ -35,7 +35,7 @@
                           <h6 class="mb-0">Крвна група </h6> <span>4 days ago</span>
                       </div>
                   </div>
-                  <div class="badge"><button routerLink="/reserve" mat-raised-button color="warn" routerLink="/reserve" >Донирај</button></div>
+                  <div *ngIf="isLogged" class="badge"><button routerLink="/reserve" mat-raised-button color="warn" routerLink="/reserve" >Донирај</button></div>
               </div>
               <div class="mt-5">
                 <h2 class="heading">Достапни крвни единици. од<b> O+ </b>крвна група</h2>
@@ -57,7 +57,7 @@
                           <h6 class="mb-0">Крвна група </h6> <span>2 days ago</span>
                       </div>
                   </div>
-                  <div class="badge"><button routerLink="/reserve" mat-raised-button color="warn" routerLink="/reserve" >Донирај</button></div>
+                  <div *ngIf="isLogged" class="badge"><button routerLink="/reserve" mat-raised-button color="warn"  >Донирај</button></div>
               </div>
               <div class="mt-5">
                 <h2 class="heading">Достапни крвни единици. од<b> A- </b>крвна група</h2>
@@ -83,7 +83,7 @@
                         <h6 class="mb-0">Крвна група </h6> <span>2 days ago</span>
                       </div>
                   </div>
-                  <div class="badge"><button routerLink="/reserve" mat-raised-button color="warn" routerLink="/reserve" >Донирај</button></div>
+                  <div *ngIf="isLogged" class="badge"><button routerLink="/reserve" mat-raised-button color="warn" routerLink="/reserve" >Донирај</button></div>
               </div>
               <div class="mt-5">
                 <h2 class="heading">Достапни крвни единици. од<b> A+ </b>крвна група</h2>
@@ -105,7 +105,7 @@
                         <h6 class="mb-0">Крвна група </h6> <span>2 days ago</span>
                       </div>
                   </div>
-                  <div class="badge"><button routerLink="/reserve" mat-raised-button color="warn" routerLink="/reserve">Донирај</button></div>
+                  <div *ngIf="isLogged" class="badge"><button routerLink="/reserve" mat-raised-button color="warn" routerLink="/reserve">Донирај</button></div>
               </div>
               <div class="mt-5">
                 <h2 class="heading">Достапни крвни единици. од<b> B- </b>крвна група</h2>
@@ -127,7 +127,7 @@
                         <h6 class="mb-0">Крвна група </h6> <span>2 days ago</span>
                       </div>
                   </div>
-                  <div class="badge"><button routerLink="/reserve" mat-raised-button color="warn" routerLink="/reserve">Донирај</button></div>
+                  <div *ngIf="isLogged" class="badge"><button routerLink="/reserve" mat-raised-button color="warn" routerLink="/reserve">Донирај</button></div>
               </div>
               <div class="mt-5">
                 <h2 class="heading">Достапни крвни единици. од<b> B+ </b>крвна група</h2>
@@ -155,7 +155,7 @@
                           <h6 class="mb-0">Крвна група</h6> <span>1 days ago</span>
                       </div>
                   </div>
-                  <div class="badge"><button routerLink="/reserve" mat-raised-button color="warn" routerLink="/reserve">Донирај</button></div>
+                  <div *ngIf="isLogged" class="badge"><button routerLink="/reserve" mat-raised-button color="warn" routerLink="/reserve">Донирај</button></div>
               </div>
               <div class="mt-5">
                   <h2 class="heading">Достапни крвни единици. од<b> AB- </b>крвна група</h2>
@@ -177,7 +177,7 @@
                           <h6 class="mb-0">Крвна група </h6> <span>4 days ago</span>
                       </div>
                   </div>
-                  <div class="badge"><button routerLink="/reserve" mat-raised-button color="warn" routerLink="/reserve">Донирај</button></div>
+                  <div *ngIf="isLogged" class="badge"><button routerLink="/reserve" mat-raised-button color="warn" routerLink="/reserve">Донирај</button></div>
               </div>
               <div class="mt-5">
                 <h2 class="heading">Достапни крвни единици. од<b> <ABbr></ABbr>+ </b>крвна група</h2>

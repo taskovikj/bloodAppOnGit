@@ -22,5 +22,10 @@ export class NavBarComponent implements OnInit {
   ngOnInit(): void {
 
   }
+  logOut()
+  {
+    this.isLogged = false;
+  
+  }
 
 }

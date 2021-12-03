@@ -1,19 +1,21 @@
 <div class="container-fluid px-0">
-  <nav class="navbar navbar-expand-sm navbar-dark bg py-0 px-0"> <a class="navbar-brand" href="#"><img id="logo" src="assets/images/redCross.png"> &nbsp;&nbsp;&nbsp;Донирај и ти</a> <span class="v-line"></span> <button class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+  <nav class="navbar navbar-expand-sm navbar-dark bg py-0 px-0"> <a class="navbar-brand" routerLink="" routerLinkActive="router-link-active" ><img id="logo" src="assets/images/redCross.png"> &nbsp;&nbsp;&nbsp;Донирај и ти</a> <span class="v-line"></span> <button class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
       <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li *ngIf="!isLogged" class="nav-item"> <a class="nav-link" routerLink="/login" >Логирај се</a> </li>
 
-              <li class="nav-item"> <a class="nav-link" routerLink="/reserve">Закажи термин</a> </li>
+              <li *ngIf="isLogged && userName.length>0" class="nav-item"> <a class="nav-link" routerLink="/reserve">Закажи термин</a> </li>
               <li class="nav-item"> <a class="nav-link" routerLink="/locations">Локации</a> </li>
               <li class="nav-item"> <a class="nav-link" routerLink="/contact-us">Контакт</a> </li>
-              <li class="nav-item"> <a class="nav-link" routerLink="/register">Регистрација</a> </li>
-              <li class="nav-item"> <a class="nav-link" routerLink="/deficit">Достапни крвни единици</a> </li>
-              <li *ngIf="isLogged && userName.length>0" class="nav-item float-end">
-                 <a class="nav-link" routerLink="/login" >Добредојдoвте
+               <li class="nav-item"> <a class="nav-link" routerLink="/deficit">Достапни крвни единици</a> </li>
 
+              <li *ngIf="!isLogged" class="nav-item"> <a class="nav-link" routerLink="/register">Регистрација</a> </li>
+              <li id="left" *ngIf="isLogged && userName.length>0" class="nav-item float-end">
+                 <a class="nav-link" routerLink="/login" >Добредојдoвте
                   {{ userName | titlecase }}</a>
-                </li>
+              </li>
+              <li *ngIf="isLogged && userName.length>0" ><a (click)="logOut()" class="nav-link" routerLink="/" ><img id="logBut" src="assets\images\LogButton1.png"></a></li>
+
           </ul>
       </div>
   </nav>

@@ -36,6 +36,7 @@ import { LoginComponent } from './login/login.component';
 import { CommonModule } from '@angular/common';
 import { DeficitBtComponent } from './deficit-bt/deficit-bt.component';
 import { ReserveComponent } from './reserve/reserve.component';
+import { Toast, ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
@@ -77,7 +78,8 @@ import { ReserveComponent } from './reserve/reserve.component';
     MatPaginatorModule,
     ReactiveFormsModule,
     MatRadioModule,
-    HttpClientModule
+    HttpClientModule,
+    ToastrModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]

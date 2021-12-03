@@ -37,6 +37,16 @@ body {
 
 
 }
+#logBut{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  color: white;
+
+}
+#left{
+  margin-left: 500px;
+}
 
 .v-line {
   background-color: gray;

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { NotificationsService } from '../services/notifications.service';
+import { RegisterService } from '../services/register.service';
 
 @Component({
   selector: 'app-application',
@@ -7,9 +9,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ApplicationComponent implements OnInit {
 
-  constructor() { }
+  userName: string = 'ime';
+  isLogged: boolean = false;
+  constructor(private registrationService: RegisterService,private notifications:NotificationsService ) {
+    this.registrationService.isUserLog.subscribe(res => this.isLogged = res);
+    this.registrationService.user.subscribe(res => {
+      if(res && res.userName){
+        this.userName = res.userName;
+      }
+    });
+  }
 
   ngOnInit(): void {
   }
+  apply()
+  {
+    this.notifications.success(this.userName + " успешно аплициравте!")
+  }
+
 
 }

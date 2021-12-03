@@ -27,19 +27,20 @@
 
         </fieldset>
 
-        <fieldset>
-          <label>Град во кој сакате да дарувате крв:</label>
-          <div class="dropdown">
-            <button class="dropbtn">Избери град</button>
-            <div class="dropdown-content">
-              <a>Куманово</a>
-              <a>Охрид</a>
-              <a>Скопје</a>
-            </div>
+        <fieldset id="field">
+          <label id="selectT">Град во кој сакате да дарувате крв:</label>
+          <div id="select" class="dropdown ">
+            <select>
+              <option>Избери град</option>
+              <option>Куманово</option>
+              <option>Охрид</option>
+              <option>Скопје</option>
+            </select>
           </div>
+
         </fieldset>
 
-        <button type="submit">Закажи термин</button>
+        <button (click)="submit()" routerLink="" >Закажи термин</button>
 
       </form>
 
