@@ -13,11 +13,11 @@ import { RegisterService } from '../services/register.service';
 })
 export class RegistersComponent implements OnInit {
 
-  
+
   submitted = false;
-  starShipForm!: FormGroup; 
- 
-  
+  starShipForm!: FormGroup;
+
+
   constructor(private fb: FormBuilder,private registerUser: RegisterService,private router: Router) { }
 
   ngOnInit(): void {
@@ -30,20 +30,21 @@ export class RegistersComponent implements OnInit {
       lastName: ['', Validators.required],
       motherName: ['', Validators.required],
       fatherName: ['', Validators.required],
+      addres:['',Validators.required],
       email: ['', Validators.required],
       gender: ['', Validators.required],
       password: ['', Validators.required],
-      
+
 
     });
-    
+
   }
- 
+
   register() {
-    
+
     this.registerUser.registerUser(this.starShipForm.value);
     this.router.navigate(['login']);
-    
+
   }
 
 }
