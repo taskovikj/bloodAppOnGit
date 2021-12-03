@@ -1,4 +1,5 @@
 
+
 .carousel slide{
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -13,3 +14,15 @@
 	-webkit-backface-visibility: visible;
 	        backface-visibility: visible;
 }
+.inner{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border-bottom: 2px solid whitesmoke;
+  border-top: 2px solid whitesmoke;
+  width: 70%;
+  font-size: 27px;
+  background-color: rgb(167, 4, 4);
+  border-radius: 10px;
+  text-align: center;
+  margin-left: 15%;
+}
+
