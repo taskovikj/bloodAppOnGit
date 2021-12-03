@@ -34,6 +34,7 @@ import {MatRadioModule} from '@angular/material/radio';
 import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './login/login.component';
 import { CommonModule } from '@angular/common';
+import { DeficitBtComponent } from './deficit-bt/deficit-bt.component';
 
 @NgModule({
   declarations: [
@@ -50,6 +51,7 @@ import { CommonModule } from '@angular/common';
     LocationsComponent,
     RegistersComponent,
     LoginComponent,
+    DeficitBtComponent,
 
   ],
   imports: [

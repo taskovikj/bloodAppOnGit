@@ -9,6 +9,7 @@ import { LocationsComponent } from './locations/locations.component';
 import { RegistersComponent } from './registers/registers.component';
 import { LoginComponent } from './login/login.component';
 import { ApplicationComponent } from './application/application.component';
+import { DeficitBtComponent } from './deficit-bt/deficit-bt.component';
 
 const routes:Routes=[
   {path:'',component:HomePageComponent},
@@ -19,7 +20,8 @@ const routes:Routes=[
   {path:'locations',component:LocationsComponent},
   { path:'register', component: RegistersComponent},
   { path: 'login', component:LoginComponent},
-  { path: 'application',component:ApplicationComponent}
+  { path: 'application',component:ApplicationComponent},
+  { path: 'deficit',component:DeficitBtComponent}
 
   ]
 

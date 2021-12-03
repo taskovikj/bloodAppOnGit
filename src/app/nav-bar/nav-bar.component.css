@@ -27,7 +27,15 @@ body {
 }
 
 .nav-link {
-  padding-bottom: 10px
+  padding-bottom: 10px;
+  transition: 350ms ease-in-out;
+}
+.navbar-nav a:hover{
+
+  border-bottom: 1px solid whitesmoke;
+  font-size: 17px;
+
+
 }
 
 .v-line {
