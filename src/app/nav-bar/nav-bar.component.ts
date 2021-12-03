@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RegisterService } from '../services/register.service';
 
 @Component({
   selector: 'app-nav-bar',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavBarComponent implements OnInit {
 
-  constructor() { }
+  isLogged: boolean = false;
+  userName: string = 'ime';
+  constructor(private registrationService: RegisterService) {
+    this.registrationService.isUserLog.subscribe(res => this.isLogged = res);
+    this.registrationService.user.subscribe(res => {
+      if(res && res.userName){
+        this.userName = res.userName;
+      }
+    });
+  }
 
   ngOnInit(): void {
+
   }
 
 }

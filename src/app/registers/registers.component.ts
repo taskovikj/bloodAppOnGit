@@ -30,7 +30,7 @@ export class RegistersComponent implements OnInit {
       lastName: ['', Validators.required],
       motherName: ['', Validators.required],
       fatherName: ['', Validators.required],
-      addres:['',Validators.required],
+      address:['',Validators.required],
       email: ['', Validators.required],
       gender: ['', Validators.required],
       password: ['', Validators.required],

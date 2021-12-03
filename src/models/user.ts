@@ -1,13 +1,13 @@
 export interface User {
-    id : string;  
+    id : string;
     name: string;
     password : string;
-      lastName: string;
-      motherName: string;
-      fatherName: string;
-      address: string;
-      email: string;
-      gender: string;
-     
-      
+    lastName: string;
+    motherName: string;
+    fatherName: string;
+    address: string;
+    email: string;
+    gender: string;
+
+
     }

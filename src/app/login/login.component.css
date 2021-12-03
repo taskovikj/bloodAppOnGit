@@ -21,6 +21,26 @@ body {
     box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #fff;
 
 }
+#heart {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  fill: darkred;
+  background-color: white;
+
+}
+#butt{
+  background-color: white;
+  color: red;
+
+}
+#reg{
+  border-bottom: 1px solid rgba(163, 2, 2, 0.89);
+
+  border-radius: 7px;
+  padding: 5px;
+  color: grey;
+}
 
 .logo {
     width: 80px;
