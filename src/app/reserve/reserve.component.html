@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+
+      <form action="index.html" method="post">
+
+        <h1>Закажување термин</h1>
+
+        <fieldset>
+
+          <legend><span class="number">1</span>Внесете ги вашите информации</legend>
+
+          <label for="name">Име:</label>
+          <input type="text" id="name" name="user_name">
+
+          <label for="mail">Презиме:</label>
+          <input type="email" id="mail" name="user_email">
+
+          <label for="mail">Матичен број:</label>
+          <input type="text" id="ssn" name="ssn">
+
+          <label for="password">Е-маил:</label>
+          <input type="password" id="password" name="user_password">
+
+        </fieldset>
+
+        <fieldset>
+          <label>Град во кој сакате да дарувате крв:</label>
+          <div class="dropdown">
+            <button class="dropbtn">Избери град</button>
+            <div class="dropdown-content">
+              <a>Куманово</a>
+              <a>Охрид</a>
+              <a>Скопје</a>
+            </div>
+          </div>
+        </fieldset>
+
+        <button type="submit">Закажи термин</button>
+
+      </form>
+
+    </body>
+</html>

@@ -10,6 +10,7 @@ import { RegistersComponent } from './registers/registers.component';
 import { LoginComponent } from './login/login.component';
 import { ApplicationComponent } from './application/application.component';
 import { DeficitBtComponent } from './deficit-bt/deficit-bt.component';
+import { ReserveComponent } from './reserve/reserve.component';
 
 const routes:Routes=[
   {path:'',component:HomePageComponent},
@@ -21,7 +22,8 @@ const routes:Routes=[
   { path:'register', component: RegistersComponent},
   { path: 'login', component:LoginComponent},
   { path: 'application',component:ApplicationComponent},
-  { path: 'deficit',component:DeficitBtComponent}
+  { path: 'deficit',component:DeficitBtComponent},
+  { path:'reserve',component:ReserveComponent}
 
   ]
 

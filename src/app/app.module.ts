@@ -35,6 +35,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './login/login.component';
 import { CommonModule } from '@angular/common';
 import { DeficitBtComponent } from './deficit-bt/deficit-bt.component';
+import { ReserveComponent } from './reserve/reserve.component';
 
 @NgModule({
   declarations: [
@@ -52,6 +53,7 @@ import { DeficitBtComponent } from './deficit-bt/deficit-bt.component';
     RegistersComponent,
     LoginComponent,
     DeficitBtComponent,
+    ReserveComponent,
 
   ],
   imports: [
